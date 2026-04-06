@@ -1,6 +1,6 @@
-# GetWorkspaceChildren
+# Smartsheet C# SDK examples
 
-Console sample that loads a Smartsheet workspace and prints its metadata plus all child sheets, folders, reports, dashboards (sights), and templates (with pagination).
+These .NET programs demonstrate using the Smartsheet C# SDK.
 
 ## Prerequisites
 
@@ -15,7 +15,13 @@ Console sample that loads a Smartsheet workspace and prints its metadata plus al
    export SMARTSHEET_ACCESS_TOKEN='your-token-here'
    ```
 
-2. From the repository root, go to the project folder and run:
+## Example programs
+
+### GetWorkspaceChildren
+
+Console sample that loads a Smartsheet workspace and prints its metadata plus all child sheets, folders, reports, dashboards (sights), and templates (with pagination).
+
+1. From the repository root, go to the project folder and run:
 
    ```bash
    cd GetWorkspaceChildren
@@ -26,7 +32,7 @@ Console sample that loads a Smartsheet workspace and prints its metadata plus al
 
 Output is JSON written to standard output (workspace first, then each child type).
 
-## Optional: workspace ID from the environment
+#### Optional: workspace ID from the environment
 
 If you omit the argument, the program reads `SMARTSHEET_WORKSPACE_ID`:
 
